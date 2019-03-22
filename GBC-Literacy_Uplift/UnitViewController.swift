@@ -11,10 +11,24 @@ import UIKit
 
 class UnitViewController: UIViewController {
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.title = "Lessons"
+        navigationItem.title = "Units"
         
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "unit1"{
+            let dst = segue.destination as! LessonViewController
+            dst.msg = "unit1"
+        } else if segue.identifier == "unit2"{
+            let dst = segue.destination as! LessonViewController
+            dst.msg = "unit2"
+        } else if segue.identifier == "unit3"{
+            let dst = segue.destination as! LessonViewController
+            dst.msg = "unit3"
+        }
     }
     
     

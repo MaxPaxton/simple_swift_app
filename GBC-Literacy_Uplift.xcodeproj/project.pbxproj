@@ -10,6 +10,7 @@
 		D43D8318223B4D8B00DFF7B0 /* UnitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43D8317223B4D8B00DFF7B0 /* UnitViewController.swift */; };
 		D43D831A223B4DAA00DFF7B0 /* LessonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43D8319223B4DAA00DFF7B0 /* LessonViewController.swift */; };
 		D43D831C223B551E00DFF7B0 /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43D831B223B551E00DFF7B0 /* OptionsViewController.swift */; };
+		D43F8106224478F000A7E413 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43F8105224478F000A7E413 /* ActivityViewController.swift */; };
 		D4E34B35223B297E0085FC90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E34B34223B297E0085FC90 /* AppDelegate.swift */; };
 		D4E34B37223B297E0085FC90 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E34B36223B297E0085FC90 /* ViewController.swift */; };
 		D4E34B3A223B297E0085FC90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4E34B38223B297E0085FC90 /* Main.storyboard */; };
@@ -42,6 +43,7 @@
 		D43D8317223B4D8B00DFF7B0 /* UnitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitViewController.swift; sourceTree = "<group>"; };
 		D43D8319223B4DAA00DFF7B0 /* LessonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonViewController.swift; sourceTree = "<group>"; };
 		D43D831B223B551E00DFF7B0 /* OptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
+		D43F8105224478F000A7E413 /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
 		D4E34B31223B297E0085FC90 /* GBC-Literacy_Uplift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GBC-Literacy_Uplift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4E34B34223B297E0085FC90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D4E34B36223B297E0085FC90 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				D43D8317223B4D8B00DFF7B0 /* UnitViewController.swift */,
 				D43D8319223B4DAA00DFF7B0 /* LessonViewController.swift */,
 				D43D831B223B551E00DFF7B0 /* OptionsViewController.swift */,
+				D43F8105224478F000A7E413 /* ActivityViewController.swift */,
 			);
 			path = "GBC-Literacy_Uplift";
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				D4E34B65223B29B60085FC90 /* MainNavigationController.swift in Sources */,
 				D4E34B67223B32D80085FC90 /* LogInController.swift in Sources */,
 				D43D8318223B4D8B00DFF7B0 /* UnitViewController.swift in Sources */,
+				D43F8106224478F000A7E413 /* ActivityViewController.swift in Sources */,
 				D43D831C223B551E00DFF7B0 /* OptionsViewController.swift in Sources */,
 				D4E34B37223B297E0085FC90 /* ViewController.swift in Sources */,
 				D43D831A223B4DAA00DFF7B0 /* LessonViewController.swift in Sources */,
