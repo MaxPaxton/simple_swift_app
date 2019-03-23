@@ -19,15 +19,10 @@ class LessonViewController: UIViewController {
         super.viewDidLoad()
         navigationItem.title = "Lessons"
         
-        if let m = msg{
-            fromUnitInfo.text = m
-        } else{
-            fromUnitInfo.text = "empty"
-        }
-        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //passing data ahead for future database
         if segue.identifier == "lesson1"{
             let dst = segue.destination as! ActivityViewController
             dst.msg_unit = msg

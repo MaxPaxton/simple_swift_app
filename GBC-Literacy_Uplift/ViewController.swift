@@ -14,9 +14,17 @@ class ViewController: UIViewController {
     var password:String?
     let logoImage = UIImage(named: "material")
     
+    
+    @IBAction func logOutBtn(_ sender: Any) {
+        self.navigationController?.pushViewController(self.storyboard?.instantiateViewController(withIdentifier: "LogInController") as! LogInController, animated: true)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "GBC-Literacy Uplift"
+        //Don't go back, must log out
+        navigationItem.hidesBackButton = true
+
 
     }
     

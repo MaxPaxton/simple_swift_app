@@ -19,6 +19,7 @@ class UnitViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //passing data ahead for future database
         if segue.identifier == "unit1"{
             let dst = segue.destination as! LessonViewController
             dst.msg = "unit1"
