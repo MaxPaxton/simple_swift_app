@@ -283,7 +283,7 @@
             </objects>
             <point key="canvasLocation" x="1613.5999999999999" y="-550.07496251874068"/>
         </scene>
-        <!--Activities-->
+        <!--Lessons-->
         <scene sceneID="eKM-e8-V1h">
             <objects>
                 <viewController storyboardIdentifier="LessonViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="oyW-3u-Q75" customClass="LessonViewController" customModule="GBC_Literacy_Uplift" customModuleProvider="target" sceneMemberID="viewController">
@@ -348,16 +348,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ZoG-t7-5ZE"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Activities" id="TB8-4E-jLQ"/>
+                    <navigationItem key="navigationItem" title="Lessons" id="TB8-4E-jLQ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0gJ-gk-yYF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2477.5999999999999" y="126.38680659670166"/>
         </scene>
-        <!--Lesson-->
+        <!--Activies-->
         <scene sceneID="vE8-iN-AvF">
             <objects>
-                <viewController id="E57-LN-GKz" customClass="ActivityViewController" customModule="GBC_Literacy_Uplift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ActivityViewController" id="E57-LN-GKz" customClass="ActivityViewController" customModule="GBC_Literacy_Uplift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="s2M-1f-Qis">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -445,7 +445,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="sta-BE-D67"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Lesson" id="ycg-WM-AYq"/>
+                    <navigationItem key="navigationItem" title="Activies" id="ycg-WM-AYq"/>
                     <connections>
                         <outlet property="fromLessonLabel" destination="xGW-tg-6o2" id="e2s-nT-eaD"/>
                         <segue destination="e59-sO-J4q" kind="show" identifier="showScore" id="swH-JG-FAA"/>

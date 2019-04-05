@@ -13,6 +13,7 @@ class ActivityViewController: UIViewController {
     
     var msg_unit:String!
     var msg_lesson:String!
+    var questionS = [Question]()
     
     //No databse Yet, Just logic of the page
     let questions = ["Favourite Pet?","Favourite Color?","Favourite Teams?"]
@@ -45,6 +46,7 @@ class ActivityViewController: UIViewController {
         super.viewDidLoad()
         //take away back option
         navigationItem.hidesBackButton = true
+        print(questionS)
 //        if let m = msg_unit{
 //            fromLessonLabel.text = m
 //        } else{

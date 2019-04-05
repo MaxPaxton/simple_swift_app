@@ -21,6 +21,8 @@
 		D4E34B55223B297F0085FC90 /* GBC_Literacy_UpliftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E34B54223B297F0085FC90 /* GBC_Literacy_UpliftUITests.swift */; };
 		D4E34B65223B29B60085FC90 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E34B64223B29B60085FC90 /* MainNavigationController.swift */; };
 		D4E34B67223B32D80085FC90 /* LogInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4E34B66223B32D80085FC90 /* LogInController.swift */; };
+		D4F1BCD9225692F40088E6E5 /* Unit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F1BCD8225692F40088E6E5 /* Unit.swift */; };
+		D4F1BCDF2256AC110088E6E5 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F1BCDE2256AC110088E6E5 /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		D4E34B56223B297F0085FC90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4E34B64223B29B60085FC90 /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 		D4E34B66223B32D80085FC90 /* LogInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInController.swift; sourceTree = "<group>"; };
+		D4F1BCD8225692F40088E6E5 /* Unit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unit.swift; sourceTree = "<group>"; };
+		D4F1BCDE2256AC110088E6E5 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,10 +124,12 @@
 				D4E34B64223B29B60085FC90 /* MainNavigationController.swift */,
 				D4E34B66223B32D80085FC90 /* LogInController.swift */,
 				D43D8317223B4D8B00DFF7B0 /* UnitViewController.swift */,
+				D4F1BCD8225692F40088E6E5 /* Unit.swift */,
 				D43D8319223B4DAA00DFF7B0 /* LessonViewController.swift */,
 				D43D831B223B551E00DFF7B0 /* OptionsViewController.swift */,
 				D43F8105224478F000A7E413 /* ActivityViewController.swift */,
 				D45582352245C3AC00154BC6 /* ScoreViewController.swift */,
+				D4F1BCDE2256AC110088E6E5 /* Question.swift */,
 			);
 			path = "GBC-Literacy_Uplift";
 			sourceTree = "<group>";
@@ -282,9 +288,11 @@
 				D43D8318223B4D8B00DFF7B0 /* UnitViewController.swift in Sources */,
 				D43F8106224478F000A7E413 /* ActivityViewController.swift in Sources */,
 				D43D831C223B551E00DFF7B0 /* OptionsViewController.swift in Sources */,
+				D4F1BCD9225692F40088E6E5 /* Unit.swift in Sources */,
 				D4E34B37223B297E0085FC90 /* ViewController.swift in Sources */,
 				D43D831A223B4DAA00DFF7B0 /* LessonViewController.swift in Sources */,
 				D4E34B35223B297E0085FC90 /* AppDelegate.swift in Sources */,
+				D4F1BCDF2256AC110088E6E5 /* Question.swift in Sources */,
 				D45582362245C3AC00154BC6 /* ScoreViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
