@@ -14,7 +14,7 @@ class Question{
     var rightAnswer:String
     var wrong1:String
     var wrong2:String
-    var wron3:String
+    var wrong3:String
     
     init(id:Int, question:String, rightAnswer:String, wrong1:String, wrong2:String, wrong3:String) {
         self.id = id
@@ -22,6 +22,6 @@ class Question{
         self.rightAnswer = rightAnswer
         self.wrong1 = wrong1
         self.wrong2 = wrong2
-        self.wron3 = wrong3
+        self.wrong3 = wrong3
     }
 }

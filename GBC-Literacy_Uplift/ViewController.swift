@@ -10,10 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    var userName:String?
-    var password:String?
+    var userName:String!
+    //var password:String?
     let logoImage = UIImage(named: "material")
     
+    @IBOutlet weak var welcomeLbl: UILabel!
     
     @IBAction func logOutBtn(_ sender: Any) {
         self.navigationController?.pushViewController(self.storyboard?.instantiateViewController(withIdentifier: "LogInController") as! LogInController, animated: true)
@@ -26,6 +27,16 @@ class ViewController: UIViewController {
         navigationItem.hidesBackButton = true
 
 
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if userName == ""{
+            userName = " Student"
+        }
+        if userName == nil {
+            userName = " Student"
+        }
+        welcomeLbl.text = "Welcome "+userName
     }
     
 

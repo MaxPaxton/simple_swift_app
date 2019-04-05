@@ -11,6 +11,8 @@ import UIKit
 
 class MainNavigationController:UINavigationController{
     
+    var userName:String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }

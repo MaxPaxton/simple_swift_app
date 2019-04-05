@@ -12,12 +12,19 @@ import UIKit
 class LogInController:UIViewController{
     
     @IBOutlet weak var userNameFiled: UITextField!
-    @IBOutlet weak var passwordField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "GBC-Literacy Uplift"
     }
     @IBAction func logInTap(_ sender: Any) {
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //passing data ahead for future database
+        if segue.identifier == "main"{
+            let dst = segue.destination as! ViewController
+            dst.userName = userNameFiled.text
+        }
     }
 }

@@ -13,12 +13,15 @@ class ActivityViewController: UIViewController {
     
     var msg_unit:String!
     var msg_lesson:String!
-    var questionS = [Question]()
+    var questionBank = [Question]()
     
-    //No databse Yet, Just logic of the page
-    let questions = ["Favourite Pet?","Favourite Color?","Favourite Teams?"]
+//    var questions: [String] {
+//        return [questionBank[0].question,questionBank[1].question,questionBank[2]] as! [String]
+//    }
     
-    let answers = [["Dog","Cat","Bird","Snake"],["Red","Yellow","Green","Orange"],["Raptors","Bulls","Knicks","Nuggets"]]
+    var questions = [String]()
+//    }
+    var answers = [[String]]()
     ///////////////////////////////////////////
     var currentQuestion = 0
     var rightAnwer:UInt32 = 0
@@ -46,7 +49,7 @@ class ActivityViewController: UIViewController {
         super.viewDidLoad()
         //take away back option
         navigationItem.hidesBackButton = true
-        print(questionS)
+        print(questionBank[0].question)
 //        if let m = msg_unit{
 //            fromLessonLabel.text = m
 //        } else{
@@ -60,6 +63,7 @@ class ActivityViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        assignQuiz()
         displayNextQuestion()
     }
     
@@ -92,5 +96,12 @@ class ActivityViewController: UIViewController {
         }
         
     }
+    
+    func assignQuiz(){
+        questions = [questionBank[0].question,questionBank[1].question,questionBank[2].question]
+        
+        answers = [[questionBank[0].rightAnswer,questionBank[0].wrong1,questionBank[0].wrong2,questionBank[0].wrong3],[questionBank[1].rightAnswer,questionBank[1].wrong1,questionBank[1].wrong2,questionBank[1].wrong3],[questionBank[2].rightAnswer,questionBank[2].wrong1,questionBank[2].wrong2,questionBank[2].wrong3]]
+    }
+    
 
 }

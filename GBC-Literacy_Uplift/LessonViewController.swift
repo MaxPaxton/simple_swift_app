@@ -17,6 +17,7 @@ class LessonViewController: UIViewController {
     var db: OpaquePointer?
     var questions = [Question]()
     var created = false
+    var selectedQuiz: ArraySlice<Question>!
     
     
     func readValues(){
@@ -32,7 +33,6 @@ class LessonViewController: UIViewController {
             let id = Int(sqlite3_column_int(stmt, 0))
             let question  = String(cString: sqlite3_column_text(stmt, 1))
             let rightAnswer  = String(cString: sqlite3_column_text(stmt, 2))
-            print(rightAnswer)
             let wrong1  = String(cString: sqlite3_column_text(stmt, 3))
             let wrong2  = String(cString: sqlite3_column_text(stmt, 4))
             let wrong3  = String(cString: sqlite3_column_text(stmt, 5))
@@ -72,19 +72,22 @@ class LessonViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         //passing data ahead for future database
         if segue.identifier == "lesson1"{
+            determineQuiz(unit: msg,lesson: "lesson1")
             let dst = segue.destination as! ActivityViewController
             dst.msg_unit = msg
             dst.msg_lesson = "lesson1"
-            dst.questionS = questions
+            dst.questionBank = questions
         } else if segue.identifier == "lesson2"{
+            determineQuiz(unit: msg,lesson: "lesson1")
             let dst = segue.destination as! ActivityViewController
             dst.msg_unit = msg
-            dst.questionS = questions
+            dst.questionBank = questions
             dst.msg_lesson = "lesson2"
         } else if segue.identifier == "lesson3"{
+            determineQuiz(unit: msg,lesson: "lesson3")
             let dst = segue.destination as! ActivityViewController
             dst.msg_unit = msg
-            dst.questionS = questions
+            dst.questionBank = questions
             dst.msg_lesson = "lesson3"
         }
     }
@@ -159,6 +162,34 @@ class LessonViewController: UIViewController {
         print("Database Created!")
         
         
+    }
+    
+    func determineQuiz(unit:String, lesson:String){
+        if unit == "unit1"{
+            if lesson == "lesson1"{
+                questions = Array(questions[0 ... 2])
+            }else if unit == "lesson2"{
+                questions = Array(questions[3 ... 5])
+            }else if unit == "lesson3"{
+                questions = Array(questions[6 ... 8])
+            }
+        } else if unit == "unit2"{
+            if lesson == "lesson1"{
+                questions = Array(questions[9 ... 11])
+            }else if unit == "lesson2"{
+                questions = Array(questions[12 ... 14])
+            }else if unit == "lesson3"{
+                questions = Array(questions[15 ... 17])
+            }
+        } else if unit == "unit3"{
+            if lesson == "lesson1"{
+                questions = Array(questions[18 ... 20])
+            }else if unit == "lesson2"{
+                questions = Array(questions[21 ... 23])
+            }else if unit == "lesson3"{
+                questions = Array(questions[24 ... 26])
+            }
+        }
     }
     
     
